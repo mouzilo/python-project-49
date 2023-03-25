@@ -2,7 +2,6 @@
 
 
 import prompt
-from random import randint, choice
 from brain_games.games.brain_calc import brain_calc
 from brain_games.games.brain_even import brain_even
 
