@@ -13,8 +13,12 @@ def welcome_user():
 
 
 def main(game='brain-calc'):
+    if game == 'brain-games':
+        return welcome_user()
+
     welcome_message = welcome_user()
     counter = 0
+
     while counter < 3:
         if game == 'brain-calc':
             question, correct_answer = brain_calc()
