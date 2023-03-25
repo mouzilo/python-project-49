@@ -6,7 +6,7 @@ from random import randint, choice
 from ..welcome.cli import welcome_user
 
 
-def main():
+def calc():
     welcome_message = welcome_user()
     counter = 0
     while counter < 3:
@@ -25,6 +25,10 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{eval(str(rand_int1) + operator + str(rand_int2))}'.\nLet's try again, {welcome_message}!")
             return
     print(f'Congratulations, {welcome_message}!')
+
+
+def main():
+    calc()
 
 
 if __name__ == '__main__':

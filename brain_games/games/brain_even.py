@@ -6,7 +6,7 @@ from random import randint
 from ..welcome.cli import welcome_user
 
 
-def main():
+def even():
     welcome_message = welcome_user()
     counter = 0
     while counter < 3:
@@ -28,6 +28,10 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, {welcome_message}!")
             return
     print(f'Congratulations, {welcome_message}!')
+
+
+def main():
+    even()
 
 
 if __name__ == '__main__':
