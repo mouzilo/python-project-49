@@ -11,5 +11,6 @@ from brain_games.games.brain_calc import calc
 def calc_s():
 	calc()
 
+
 def even_s():
 	even()
