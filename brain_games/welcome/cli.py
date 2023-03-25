@@ -3,8 +3,8 @@
 
 import prompt
 from random import randint, choice
-from games.brain_calc import brain_calc
-from games.brain_even import brain_even
+from brain_games.games.brain_calc import brain_calc
+from brain_games.games.brain_even import brain_even
 
 
 def welcome_user():
@@ -13,13 +13,21 @@ def welcome_user():
     return name
 
 
-def run_game(game):
+def main(game='brain-calc'):
     welcome_message = welcome_user()
     counter = 0
     while counter < 3:
-        question, correct_answer = game()
+        if game == 'brain-calc':
+            question, correct_answer = brain_calc()
+        elif game == 'brain-even':
+            question, correct_answer = brain_even()
+        else:
+            print('Unknown game')
+            return
+
         print('Question:', question)
         answer = prompt.string('Your answer: ')
+
         if answer == correct_answer:
             print('Correct!')
             counter += 1
@@ -28,7 +36,5 @@ def run_game(game):
             return
     print(f'Congratulations, {welcome_message}!')
 
-
-
 if __name__ == '__main__':
-    run_game(game)
+    main(game)

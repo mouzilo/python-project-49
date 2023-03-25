@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 
+from random import randint, choice
+
+
 def brain_calc():
     num1 = randint(1, 10)
     num2 = randint(1, 10)
@@ -8,3 +11,7 @@ def brain_calc():
     question = f'{num1} {operation} {num2}'
     correct_answer = str(eval(question))
     return question, correct_answer
+
+
+if __name__ == '__main__':
+    brain_calc()
