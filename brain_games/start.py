@@ -21,3 +21,7 @@ def even():
 
 def gcd():
 	engine(game = 'brain_gcd')
+
+
+def progression():
+	engine(game = 'brain_progression')
