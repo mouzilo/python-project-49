@@ -17,3 +17,7 @@ def calc():
 
 def even():
 	engine(game = 'brain_even')
+
+
+def gcd():
+	engine(game = 'brain_gcd')

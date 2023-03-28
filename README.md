@@ -2,6 +2,12 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a7f093db8571a8cbb37b/maintainability)](https://codeclimate.com/github/mouzilo/python-project-49/maintainability)
 [![Actions Status](https://github.com/mouzilo/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/mouzilo/python-project-49/actions)
 
-brain-even: https://asciinema.org/connect/ae81e15b-7c91-41bb-bfe9-ac2b49ea2106
+brain-games: https://asciinema.org/a/kJrXZddguwUx1hljW9ptSH2gJ
 
-brain-calc: https://asciinema.org/a/x94ChASPuwLRBjrnY8MCmFhZl
+brain-even: https://asciinema.org/a/sOZSv509liuti10deihx2ehMi
+
+brain-calc: https://asciinema.org/a/5mXUSgP4XKzo4pJLWmElou2cl
+
+brain-gcd: https://asciinema.org/a/vV5SPKglOPptStefIqNpDLKLZ
+
+
