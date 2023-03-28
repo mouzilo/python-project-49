@@ -25,3 +25,7 @@ def gcd():
 
 def progression():
 	engine(game = 'brain_progression')
+
+
+def prime():
+	engine(game = 'brain_prime')

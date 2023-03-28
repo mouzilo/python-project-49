@@ -7,6 +7,7 @@ from brain_games.games.brain_calc import brain_calc
 from brain_games.games.brain_even import brain_even
 from brain_games.games.brain_gcd import brain_gcd
 from brain_games.games.brain_progression import brain_progression
+from brain_games.games.brain_prime import brain_prime
 
 
 def engine(game='brain_even'):
@@ -20,6 +21,8 @@ def engine(game='brain_even'):
         print(f'Find the greatest common divisor of given numbers.')
     elif game == 'brain_progression':
         print(f'What number is missing in the progression?')
+    elif game == 'brain_prime':
+        print(f'Answer "yes" if given number is prime. Otherwise answer "no".')
     else:
         print('Unknown game')
     while counter < 3:
@@ -31,6 +34,8 @@ def engine(game='brain_even'):
             question, correct_answer = brain_gcd()
         elif game == 'brain_progression':
             question, correct_answer = brain_progression()
+        elif game == 'brain_prime':
+            question, correct_answer = brain_prime()
         else:
             print('Unknown game')
             return
