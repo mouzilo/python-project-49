@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-from random import randint, choice
+from random import randint
 
 
 def gcd_recursion(num1, num2):

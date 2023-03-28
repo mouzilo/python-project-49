@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 import prompt
 from brain_games.games.brain_games import welcome_user
 from brain_games.games.brain_calc import brain_calc
@@ -14,15 +13,15 @@ def engine(game='brain_even'):
     welcome_message = welcome_user()
     counter = 0
     if game == 'brain_calc':
-        print(f'What is the result of the expression?')
+        print('What is the result of the expression?')
     elif game == 'brain_even':
-        print(f'Answer "yes" if the number is even, otherwise answer "no".')
+        print('Answer "yes" if the number is even, otherwise answer "no".')
     elif game == 'brain_gcd':
-        print(f'Find the greatest common divisor of given numbers.')
+        print('Find the greatest common divisor of given numbers.')
     elif game == 'brain_progression':
-        print(f'What number is missing in the progression?')
+        print('What number is missing in the progression?')
     elif game == 'brain_prime':
-        print(f'Answer "yes" if given number is prime. Otherwise answer "no".')
+        print('Answer "yes" if given number is prime. Otherwise answer "no".')
     else:
         print('Unknown game')
     while counter < 3:
@@ -47,6 +46,8 @@ def engine(game='brain_even'):
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {welcome_message}!")
+            print(f"'{answer}' is wrong answer ;(. \n"
+                  f"Correct answer was '{correct_answer}'.\n"
+                  f"Let's try again, {welcome_message}!")
             return
     print(f'Congratulations, {welcome_message}!')
