@@ -13,18 +13,15 @@ def engine(game='brain_even'):
     welcome_message = welcome_user()
     counter = 0
 
-    if game == 'brain_calc':
-        print('What is the result of the expression?')
-    elif game == 'brain_even':
-        print('Answer "yes" if the number is even, otherwise answer "no".')
-    elif game == 'brain_gcd':
-        print('Find the greatest common divisor of given numbers.')
-    elif game == 'brain_progression':
-        print('What number is missing in the progression?')
-    elif game == 'brain_prime':
-        print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    else:
-        print('Unknown game')
+    comment_map = {
+        'brain_calc': 'What is the result of the expression?',
+        'brain_even': 'Answer "yes" if the number is even, '
+                      'otherwise answer "no".',
+        'brain_gcd': 'Find the greatest common divisor of given numbers.',
+        'brain_progression': 'What number is missing in the progression?',
+        'brain_prime': 'Answer "yes" if given number is prime. '
+                       'Otherwise answer "no".'
+    }
 
     game_map = {
         'brain_calc': brain_calc,
@@ -34,10 +31,7 @@ def engine(game='brain_even'):
         'brain_prime': brain_prime,
     }
 
-    if game not in game_map:
-        print('Unknown game')
-        return
-
+    print(comment_map[game])
     while counter < 3:
         question, correct_answer = game_map[game]()
         print('Question:', question)
