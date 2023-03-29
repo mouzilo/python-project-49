@@ -13,7 +13,7 @@ def brain_progression():
 
     hidden_index = randint(0, len(progression) - 1)
     hidden_number = str(progression[hidden_index])
-    progression_with_hidden = list(progression)
+    progression_with_hidden = list(map(str, progression))
     progression_with_hidden[hidden_index] = '..'
 
-    return progression_with_hidden, hidden_number
+    return ' '.join(progression_with_hidden), hidden_number
