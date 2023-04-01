@@ -11,12 +11,12 @@ python = "^3.9"
 prompt = "^0.4.1"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.start:welcome"
-brain-even = "brain_games.start:even"
-brain-calc = "brain_games.start:calc"
-brain-gcd = "brain_games.start:gcd"
-brain-progression = 'brain_games.start:progression'
-brain-prime = 'brain_games.start:prime'
+brain-games = "brain_games.scripts.brain_games:brain_games"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = 'brain_games.scripts.brain_progression:main'
+brain-prime = 'brain_games.scripts.brain_prime:main'
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
