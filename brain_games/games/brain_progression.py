@@ -16,7 +16,7 @@ def brain_progression(welcome_message):
         progression_with_hidden = list(map(str, progression))
         progression_with_hidden[hidden_index] = '..'
         question = str(' '.join(progression_with_hidden))
-        print(question)
+        print('Question:', question)
         answer = prompt.string('Your answer: ')
         result = engine(welcome_message, correct_answer, answer, counter)
         if result == "Correct!":
