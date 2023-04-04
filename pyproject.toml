@@ -6,6 +6,13 @@ authors = ["mouzilo <6473839@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
 repository = "https://github.com/mouzilo/python-project-49"
+classifiers = [
+"Development Status :: 5 - Production/Stable",
+"Intended Audience :: Developers",
+"Intended Audience :: Information Technology",
+"License :: OSI Approved :: MIT License",
+"Programming Language :: Python :: 3.10",
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -25,10 +32,3 @@ flake8 = "^6.0.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[classifiers] 
-"Development Status :: 5 - Production/Stable",
-"Intended Audience :: Developers",
-"Intended Audience :: Information Technology",
-"License :: OSI Approved :: MIT License",
-"Programming Language :: Python :: 3.10 :: Only"
