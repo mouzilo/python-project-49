@@ -1,17 +1,16 @@
-def engine(welcome_message, correct_answer, answer, counter):
-    if counter == 1 or counter == 2:
-        if answer == correct_answer:
-            return 'Correct!'
+def engine(welcome_message, generate_question_func):
+    correct_answers_count = 0
+    for question_num in range(1, 4):
+        question, correct_answer = generate_question_func()
+        print(f'Question: {question}')
+        user_answer = input('Your answer: ')
+        if user_answer == correct_answer:
+            print('Correct!')
+            correct_answers_count += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. \n"
+            print(f"'{user_answer}' is wrong answer ;(. \n"
                   f"Correct answer was '{correct_answer}'.\n"
                   f"Let's try again, {welcome_message}!")
-            return
-    else:
-        if answer == correct_answer:
-            print(f'Congratulations, {welcome_message}!')
-        else:
-            print(f"'{answer}' is wrong answer ;(. \n"
-                  f"Correct answer was '{correct_answer}'.\n"
-                  f"Let's try again, {welcome_message}!")
-            return
+            return False
+    print(f'Congratulations, {welcome_message}!')
+    return True

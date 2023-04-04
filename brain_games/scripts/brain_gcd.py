@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from brain_games.games.brain_gcd import brain_gcd
 from brain_games.scripts.brain_games import welcome_user
 
