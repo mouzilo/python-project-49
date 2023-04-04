@@ -26,10 +26,9 @@ flake8 = "^6.0.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[classifiers] = [ 
+[classifiers] 
 "Development Status :: 5 - Production/Stable",
 "Intended Audience :: Developers",
 "Intended Audience :: Information Technology",
 "License :: OSI Approved :: MIT License",
-"Programming Language :: Python :: 3.10 :: Only",
-]
+"Programming Language :: Python :: 3.10 :: Only"
