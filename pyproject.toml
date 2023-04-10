@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.4.0"
-description = "Brain Games - это набор увлекательных логических игр, которые помогут вам провести время с пользой для вашего мозга. Разработанные профессиональными психологами, эти игры помогут вам тренировать свою память, концентрацию и улучшать свои навыки логического мышления."
+description = "Brain Games is a set of engaging logic games that will help you spend your time wisely for your brain. Developed by professional psychologists, these games will help you train your memory, concentration, and improve your logical thinking skills."
 authors = ["mouzilo <6473839@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]

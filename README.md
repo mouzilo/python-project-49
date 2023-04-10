@@ -15,29 +15,30 @@ brain-progression: https://asciinema.org/a/bHYysThKU9HDUP0zeU6DcEeU6
 brain-prime: https://asciinema.org/a/TOQ1uQwz61RiwqGV8nOHjtObv
 
 
-### Инструкция
-"Игры разума" включают в себя 5 игр:
-1. Калькулятор (brain-calc): необходимо ввести правильный ответ.
-2. Проверка на чётность (brain-even): необходимо ответить 'yes', если число чётное, 'no', если не чётное.
-3. Наибольший общий делитель (brain-gcd): необходимо ввести наибольший общий делитель для двух чисел.
-4. Арифметическая програссия (brain-progression): необходимо ввести пропущенное число прогрессии. 
-5. Простое ли число (brain-prime): необходимо ввести 'yes', если число просто, и 'no', если нет.
+### Instructions
+"Mind Games" includes 5 games:
+1. Calculator (brain-calc): enter the correct answer.
+2. Even or odd (brain-even): answer 'yes' if the number is even, 'no' otherwise.
+3. Greatest Common Divisor (brain-gcd): enter the greatest common divisor for two numbers.
+4. Arithmetic Progression (brain-progression): enter the missing number in the progression.
+5. Is the number prime? (brain-prime): enter 'yes' if the number is prime, 'no' otherwise.
 
 
 
-### Как установить
-1. Клонируйте репозиторий
+
+### Installation
+1. Clone the repository
 ```
 git clone git@github.com:mouzilo/python-project-49.git
 ```
 
-2. Установите виртуальное окружение
+2. Install the virtual environment
 
 ```
 make install
 ```
 
-3. Удачи в игре!
+3. Good luck with the game!
 
 ```
 brain-calc

@@ -4,10 +4,12 @@ from random import randint
 
 def brain_progression(welcome_message):
     print('What number is missing in the progression?')
+    start_gen = 1
+    end_gen = 10
 
     def generate_question():
-        a = randint(1, 10)
-        d = randint(1, 10)
+        a = randint(start_gen, end_gen)
+        d = randint(start_gen, end_gen)
         progression = []
         for i in range(10):
             progression.append(a + i * d)
