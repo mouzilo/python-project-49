@@ -2,17 +2,17 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a7f093db8571a8cbb37b/maintainability)](https://codeclimate.com/github/mouzilo/python-project-49/maintainability)
 [![Actions Status](https://github.com/mouzilo/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/mouzilo/python-project-49/actions)
 
-brain-games: https://asciinema.org/a/kt55hokGFbwCoeJIvCEVtLoIB
+[![asciicast](https://asciinema.org/a/kt55hokGFbwCoeJIvCEVtLoIB.svg)](https://asciinema.org/a/kt55hokGFbwCoeJIvCEVtLoIB)
 
-brain-even: https://asciinema.org/a/8OA5AXXZ7cfuBR3QwnjpNbKLw
+[![asciicast](https://asciinema.org/a/8OA5AXXZ7cfuBR3QwnjpNbKLw.svg)](https://asciinema.org/a/8OA5AXXZ7cfuBR3QwnjpNbKLw)
 
-brain-calc: https://asciinema.org/a/1jq5EtSivGL3zzk9P5OSjQlAf
+[![asciicast](https://asciinema.org/a/1jq5EtSivGL3zzk9P5OSjQlAf.svg)](https://asciinema.org/a/1jq5EtSivGL3zzk9P5OSjQlAf)
 
-brain-gcd: https://asciinema.org/a/YOe7v4RFoiB9AXwAkW1kY4dSk
+[![asciicast](https://asciinema.org/a/YOe7v4RFoiB9AXwAkW1kY4dSk.svg)](https://asciinema.org/a/YOe7v4RFoiB9AXwAkW1kY4dSk)
 
-brain-progression: https://asciinema.org/a/bHYysThKU9HDUP0zeU6DcEeU6
+[![asciicast](https://asciinema.org/a/bHYysThKU9HDUP0zeU6DcEeU6.svg)](https://asciinema.org/a/bHYysThKU9HDUP0zeU6DcEeU6)
 
-brain-prime: https://asciinema.org/a/TOQ1uQwz61RiwqGV8nOHjtObv
+[![asciicast](https://asciinema.org/a/TOQ1uQwz61RiwqGV8nOHjtObv.svg)](https://asciinema.org/a/TOQ1uQwz61RiwqGV8nOHjtObv)
 
 
 ### Instructions

@@ -1,3 +1,13 @@
+import prompt
+
+
+def welcome_user():
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    return name
+
+
 def engine(welcome_message, generate_question_func):
     correct_answers_count = 0
     for question_num in range(1, 4):

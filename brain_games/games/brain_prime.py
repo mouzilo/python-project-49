@@ -1,5 +1,7 @@
-from brain_games.engine.engine import engine
 from random import randint
+
+START_GEN = 1
+END_GEN = 10
 
 
 def is_prime(n):
@@ -11,14 +13,7 @@ def is_prime(n):
     return True
 
 
-def brain_prime(welcome_message):
-    print('Answer "yes" if given number is prime. '
-          'Otherwise answer "no".')
-    start_gen = 1
-    end_gen = 10
-
-    def generate_question():
-        question = randint(start_gen, end_gen)
-        correct_answer = 'yes' if is_prime(question) else 'no'
-        return question, correct_answer
-    engine(welcome_message, generate_question)
+def generate_question():
+    question = randint(START_GEN, END_GEN)
+    correct_answer = 'yes' if is_prime(question) else 'no'
+    return question, correct_answer

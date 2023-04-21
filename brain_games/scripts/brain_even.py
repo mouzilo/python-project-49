@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 
-from brain_games.games.brain_even import brain_even
-from brain_games.scripts.brain_games import welcome_user
+from brain_games.engine.engine import engine, welcome_user
+from brain_games.games.brain_even import generate_question
 
 
 def main():
     welcome_message = welcome_user()
-    brain_even(welcome_message)
+    print('Answer "yes" if the number is even, '
+          'otherwise answer "no".')
+    engine(welcome_message, generate_question)
 
 
 if __name__ == '__main__':

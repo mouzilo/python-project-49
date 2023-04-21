@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
-from brain_games.games.brain_gcd import brain_gcd
-from brain_games.scripts.brain_games import welcome_user
+from brain_games.games.brain_gcd import generate_question
+from brain_games.engine.engine import engine, welcome_user
 
 
 def main():
     welcome_message = welcome_user()
-    brain_gcd(welcome_message)
+    print('Find the greatest common divisor of given numbers.')
+    engine(welcome_message, generate_question)
 
 
 if __name__ == '__main__':
