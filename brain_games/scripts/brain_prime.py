@@ -5,7 +5,7 @@ from brain_games.engine.engine import engine
 
 
 def main():
-    message = 'Answer "yes" if given number is prime, \notherwise answer "no".'
+    message = 'Answer "yes" if given number is prime. \nOtherwise answer "no".'
     engine(message, generate_question)
 
 
