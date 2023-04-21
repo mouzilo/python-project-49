@@ -5,7 +5,7 @@ from brain_games.games.brain_even import generate_question
 
 
 def main():
-    message = 'Answer "yes" if the number is even, \notherwise answer "no".'
+    message = 'Answer "yes" if the number is even, otherwise answer "no".'
     engine(message, generate_question)
 
 
