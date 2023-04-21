@@ -1,14 +1,10 @@
-import prompt
+def engine(message, generate_question_func):
 
-
-def welcome_user():
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
+    name = input('May I have your name? ')
     print(f'Hello, {name}!')
-    return name
+    print(message)
 
-
-def engine(welcome_message, generate_question_func):
     correct_answers_count = 0
     for question_num in range(1, 4):
         question, correct_answer = generate_question_func()
@@ -20,7 +16,7 @@ def engine(welcome_message, generate_question_func):
         else:
             print(f"'{user_answer}' is wrong answer ;(. \n"
                   f"Correct answer was '{correct_answer}'.\n"
-                  f"Let's try again, {welcome_message}!")
+                  f"Let's try again, {name}!")
             return False
-    print(f'Congratulations, {welcome_message}!')
+    print(f'Congratulations, {name}!')
     return True
