@@ -1,15 +1,23 @@
 from random import randint
 
 START_GEN = 1
-END_GEN = 10
+LENGTH = 10
+STEP = 2
+
+
+def print_description():
+    print('What number is missing in the progression?')
+
+
+def generate_progression(start=START_GEN, length=LENGTH, step=STEP):
+    progression = []
+    for i in range(length):
+        progression.append(start + i * step)
+    return progression
 
 
 def generate_question():
-    a = randint(START_GEN, END_GEN)
-    d = randint(START_GEN, END_GEN)
-    progression = []
-    for i in range(10):
-        progression.append(a + i * d)
+    progression = generate_progression()
     hidden_index = randint(0, len(progression) - 1)
     correct_answer = str(progression[hidden_index])
     progression_with_hidden = list(map(str, progression))

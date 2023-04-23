@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.games.brain_prime import generate_question
+import brain_games.games.brain_prime
 from brain_games.engine.engine import engine
 
 
 def main():
-    message = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    engine(message, generate_question)
+    engine(brain_games.games.brain_prime)
 
 
 if __name__ == '__main__':

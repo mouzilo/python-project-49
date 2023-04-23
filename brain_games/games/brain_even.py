@@ -4,6 +4,10 @@ START_GEN = 1
 END_GEN = 10
 
 
+def print_description():
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+
 def generate_question():
     question = randint(START_GEN, END_GEN)
     correct_answer = 'yes' if question % 2 == 0 else 'no'

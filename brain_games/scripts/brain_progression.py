@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.games.brain_progression import generate_question
+import brain_games.games.brain_progression
 from brain_games.engine.engine import engine
 
 
 def main():
-    message = 'What number is missing in the progression?'
-    engine(message, generate_question)
+    engine(brain_games.games.brain_progression)
 
 
 if __name__ == '__main__':

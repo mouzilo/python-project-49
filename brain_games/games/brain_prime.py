@@ -4,6 +4,10 @@ START_GEN = 1
 END_GEN = 10
 
 
+def print_description():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
+
 def is_prime(n):
     if n <= 1:
         return False

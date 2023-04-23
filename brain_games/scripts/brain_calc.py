@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
 from brain_games.engine.engine import engine
-from brain_games.games.brain_calc import generate_question
+import brain_games.games.brain_calc
 
 
 def main():
-    message = 'What is the result of the expression?'
-    engine(message, generate_question)
+    engine(brain_games.games.brain_calc)
 
 
 if __name__ == '__main__':
