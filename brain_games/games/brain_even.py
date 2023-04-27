@@ -2,10 +2,7 @@ from random import randint
 
 START_GEN = 1
 END_GEN = 10
-
-
-def print_description():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_question():

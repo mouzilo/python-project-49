@@ -3,10 +3,7 @@ from math import gcd
 
 START_GEN = 1
 END_GEN = 10
-
-
-def print_description():
-    print('Find the greatest common divisor of given numbers.')
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def generate_question():

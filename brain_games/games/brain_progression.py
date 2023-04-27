@@ -3,10 +3,7 @@ from random import randint
 START_GEN = 1
 LENGTH = 10
 STEP = 2
-
-
-def print_description():
-    print('What number is missing in the progression?')
+DESCRIPTION = 'What number is missing in the progression?'
 
 
 def generate_progression(start=START_GEN, length=LENGTH, step=STEP):
